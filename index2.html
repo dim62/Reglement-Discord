@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Règlement – Federal Roleplay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("150A4ED6-37BE-4EF1-A839-3D06E881B2FA.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #eee;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(20, 20, 20, 0.92);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+            backdrop-filter: blur(5px);
+        }
+
+        h1, h2 {
+            color: #00bfff;
+            text-align: center;
+        }
+
+        h3 {
+            color: #ffa500;
+            margin-top: 25px;
+        }
+
+        .reglement {
+            max-height: 450px;
+            overflow-y: auto;
+            padding: 20px;
+            border: 1px solid #333;
+            background: rgba(20,20,20,0.85);
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .accept {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 25px;
+            font-size: 16px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: not-allowed;
+        }
+
+        button.active {
+            background-color: #28a745;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📜 Règlement Officiel (discord)</h1>
+    <h2>Discord Federal Roleplay</h2>
+
+    <div class="reglement">
+
+        <h3>1️⃣ Règles Générales</h3>
+        <ul>
+            <li>Respect obligatoire envers tous les membres (joueurs, staff, visiteurs).</li>
+            <li>Aucune insulte, provocation, harcèlement ou menace.</li>
+            <li>Les propos racistes, sexistes, homophobes ou discriminatoires sont interdits.</li>
+            <li>Spam, flood, pubs non autorisées et mentions abusives interdits.</li>
+            <li>Pseudos et avatars doivent rester corrects et appropriés.</li>
+        </ul>
+
+        <h3>2️⃣ Communication & Comportement</h3>
+        <ul>
+            <li>Langage correct et lisible.</li>
+            <li>Évitez les majuscules excessives.</li>
+            <li>Soundboard, cris ou micro abusif interdits.</li>
+            <li>Le HRP doit rester dans les salons prévus.</li>
+            <li>Les conflits doivent être réglés en privé, contactez le staff si nécessaire.</li>
+        </ul>
+
+        <h3>3️⃣ Roleplay Discord</h3>
+        <ul>
+            <li>Le Discord est un prolongement du RP en jeu.</li>
+            <li>Partage d’informations RP ou staff interdit.</li>
+            <li>Tickets uniquement pour demandes sérieuses.</li>
+            <li>Décisions RP importantes se font **en jeu**, pas sur Discord.</li>
+        </ul>
+
+        <h3>4️⃣ Salons Vocaux</h3>
+        <ul>
+            <li>Respect des salons vocaux et des participants.</li>
+            <li>Pas d’écoute de conversations privées.</li>
+            <li>Ne pas déranger le staff sans autorisation.</li>
+            <li>Salons privés restent privés.</li>
+        </ul>
+
+        <h3>5️⃣ Sanctions</h3>
+        <ul>
+            <li>Non-respect du règlement = Avertissement → Mute → Kick → Bannissement.</li>
+            <li>Le staff se réserve le droit d’adapter la sanction selon la gravité.</li>
+        </ul>
+
+        <h3>6️⃣ Staff</h3>
+        <ul>
+            <li>Les décisions du staff doivent être respectées.</li>
+            <li>Toute contestation se fait calmement et en ticket.</li>
+            <li>Abus de ticket ou manque de respect envers le staff sanctionnable.</li>
+        </ul>
+
+        <h3>7️⃣ Acceptation</h3>
+        <ul>
+            <li>En restant sur le serveur, vous confirmez :</li>
+            <li>✅ Avoir lu le règlement</li>
+            <li>✅ L’accepter sans condition</li>
+            <li>✅ Vous engager à le respecter</li>
+        </ul>
+
+    </div>
+
+    <div class="accept">
+        <label>
+            <input type="checkbox" id="accept">
+            J’ai lu et j’accepte le règlement du serveur
+        </label><br>
+        <button id="btn" disabled>Valider sur Discord</button>
+    </div>
+</div>
+
+<script>
+const checkbox = document.getElementById("accept");
+const button = document.getElementById("btn");
+
+checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+        button.disabled = false;
+        button.classList.add("active");
+    } else {
+        button.disabled = true;
+        button.classList.remove("active");
+    }
+});
+
+button.addEventListener("click", () => {
+    window.open("https://discordapp.com/channels/1454919827989991426/1454919829181042818","_blank");
+});
+</script>
+
+</body>
+</html>
